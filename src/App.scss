@@ -3,6 +3,7 @@ body {
 }
 
 body {
+
     &::before,
     &::after {
         content: "";
@@ -75,17 +76,19 @@ body {
     &-hero {
         &-container {
             // background: red;
-            height: calc(100vh - 150px);
+            height: calc(100vh - 70px);
+            margin-top: 40px;
             width: 100%;
             display: flex;
             align-items: flex-start;
+            align-items: center;
             justify-content: center;
-            padding-top: 15%;
+            // padding-top: 15%;
             position: relative;
 
             @media screen and (max-width: 650px) {
                 & {
-                    padding-top: 10%;
+                    // padding-top: 10%;
                 }
             }
         }
@@ -147,6 +150,8 @@ body {
             height: 100%;
             width: 30%;
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         &-socials {
@@ -235,21 +240,25 @@ body {
     &-about-container {
         width: 90%;
         margin-bottom: 100px;
+        scroll-margin-top: 140px;
     }
 
     &-experience-container {
         width: 90%;
         margin-bottom: 100px;
+        scroll-margin-top: 140px;
     }
 
     &-projects-container {
         width: 90%;
         margin-bottom: 100px;
+        scroll-margin-top: 140px;
     }
 
     &-contact-container {
         width: 90%;
         margin-bottom: 100px;
+        scroll-margin-top: 140px;
     }
 
 }
