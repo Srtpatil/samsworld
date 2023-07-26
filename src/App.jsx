@@ -119,7 +119,7 @@ function App() {
               <div className='site-hero-description'>
                 <p className='site-hero-description-text'>
                   Welcome to my little corner of the internet!
-                  I am a skilled software engineer with a passion for solving complex problems and creating innovative solutions :).
+                  I am a skilled software engineer with a passion for solving complex problems and creating innovative solutions :) <br />
                   Currently working at <a href="https://www.veritas.com/" target="_blank" rel="noreferrer">Veritas Technologies</a>.</p>
               </div>
 
