@@ -5,9 +5,15 @@ import Button from '../Button/Button'
 import cn from 'classnames';
 import ResumeButton from '../ResumeButton';
 
-const NavItem = ({ title, path, onClick }) => {
+const NavItem = ({ title, path, onClick, showSidebar }) => {
+    const removeSidebar = () => {
+        if(showSidebar) {
+            onClick();
+        }
+    }
+
     return (
-        <li className='nav-link' onClick={onClick}>
+        <li className='nav-link' onClick={removeSidebar}>
             <a style={{ textDecoration: "none", color: "inherit" }} href={path}>{title}</a>
         </li>
     )
@@ -63,10 +69,10 @@ const Navbar = () => {
                 <ul className={cn("nav-links-container", {
                     "nav-show-sidebar": showSidebar
                 })}>
-                    <NavItem title="About" path="#about" onClick={toggleSidebar} />
-                    <NavItem title="Experience" path="#experience" onClick={toggleSidebar} />
-                    <NavItem title="Work" path="#projects" onClick={toggleSidebar} />
-                    <NavItem title="Contact" path="#contact" onClick={toggleSidebar} />
+                    <NavItem title="About" path="#about" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="Experience" path="#experience" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="Work" path="#projects" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="Contact" path="#contact" onClick={toggleSidebar} showSidebar={showSidebar}/>
                     <ResumeButton />
                 </ul>
 

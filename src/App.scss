@@ -80,12 +80,12 @@ body {
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            padding-top: 10%;
+            padding-top: 15%;
             position: relative;
 
             @media screen and (max-width: 650px) {
                 & {
-                    padding-top: 5%;
+                    padding-top: 10%;
                 }
             }
         }

@@ -24,7 +24,7 @@ import { EMAIL, GITHUB_LINK, LEETCODE_LINK, LINKEDIN_LINK } from './constants';
 const Projects = [
   {
     title: "Sam's World",
-    description: "A blog app with some stuff in it, and good features it is a really good prohect trsu me bro !",
+    description: "Personal portfolio website made with react, you are viewing it right now !",
     githubLink: "https://github.com",
     projectLink: "https://srtpatil.github.io",
     icon: FaUserAstronaut,
