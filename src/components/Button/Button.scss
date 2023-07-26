@@ -1,0 +1,16 @@
+.button {
+    &-filled {}
+
+    &-outlined {
+        border: 2px solid var(--green);
+        border-radius: 6px;
+        outline: none;
+        background: transparent;
+        padding: 10px 15px;
+        color: var(--green);
+        font-size: 1.1rem;
+        font-family: inherit;
+        max-width: 300px;
+        cursor: pointer;
+    }
+}

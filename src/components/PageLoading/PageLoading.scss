@@ -1,0 +1,104 @@
+.loading {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transform: translateY(-110%);
+    transition: all 1s cubic-bezier(.165, .84, .44, 1);
+
+    &-in {
+        transform: translateY(0);
+    }
+
+    &-out {
+        transform: translateY(-110%);
+    }
+
+    &-mask {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: var(--navy);
+        // transform: translateY(-110%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &-quote {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--light-slate);
+        overflow: hidden;
+        z-index: inherit;
+        padding: 40px;
+
+        &-container {
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+
+            &-mask {
+                position: relative;
+                display: block;
+                height: 100%;
+                width: 100%;
+                padding: 40px;
+                background-color: var(--light-navy);
+                background: var(--navy);
+                inset: 4px;
+                border-radius: 16px;
+                z-index: 999;
+            }
+
+            @keyframes border-move {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: calc(100% + 100px);
+                left: -50px;
+                height: 100%;
+                background-image: conic-gradient(transparent, transparent, var(--green));
+                animation: border-move 2s linear infinite;
+                z-index: 997;
+            }
+
+        }
+
+        &-highlight {
+            color: var(--green);
+        }
+
+        h1 {
+            font-size: clamp(16px, 6vw, 60px);
+
+            &::before {
+                content: '“ ';
+            }
+        }
+
+        h2 {
+            font-size: clamp(12px, 3vw, 30px);
+            font-style: italic;
+            text-align: end;
+        }
+    }
+
+
+    &-visible {
+        z-index: 998;
+        display: block;
+    }
+}

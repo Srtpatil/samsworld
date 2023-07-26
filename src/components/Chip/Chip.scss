@@ -1,0 +1,13 @@
+.chip-container {
+    background-color: var(--lightest-navy);
+    padding: 10px 20px 10px 20px;
+    height: 32px;
+    border-radius: 16px;
+    font-size: var(--fz-sm);
+    font-family: vat(--font-mono);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lightest-slate);
+    column-gap: 6px;
+}

@@ -1,0 +1,23 @@
+.site-list {
+    &-container {
+        ul {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            font-size: var(--fz-lg);
+
+            li {
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 10px;
+
+                &::before {
+                    content: "▹";
+                    position: absolute;
+                    left: 0px;
+                    color: var(--green);
+                }
+            }
+        }
+    }
+}
