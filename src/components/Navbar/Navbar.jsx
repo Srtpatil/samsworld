@@ -44,7 +44,11 @@ const Navbar = () => {
         setShowSidebar(value => !value);
     }
     useEffect(() => {
-        document.body.classList.toggle("overflow-hidden")
+        if(showSidebar) {
+            document.body.classList.add("overflow-hidden")
+        } else {
+            document.body.classList.remove("overflow-hidden")
+        }
     }, [showSidebar])
 
 
