@@ -5,9 +5,9 @@ import Button from '../Button/Button'
 import cn from 'classnames';
 import ResumeButton from '../ResumeButton';
 
-const NavItem = ({ title, path }) => {
+const NavItem = ({ title, path, onClick }) => {
     return (
-        <li className='nav-link'>
+        <li className='nav-link' onClick={onClick}>
             <a style={{ textDecoration: "none", color: "inherit" }} href={path}>{title}</a>
         </li>
     )
@@ -44,7 +44,7 @@ const Navbar = () => {
         setShowSidebar(value => !value);
     }
     useEffect(() => {
-        if(showSidebar) {
+        if (showSidebar) {
             document.body.classList.add("overflow-hidden")
         } else {
             document.body.classList.remove("overflow-hidden")
@@ -63,10 +63,10 @@ const Navbar = () => {
                 <ul className={cn("nav-links-container", {
                     "nav-show-sidebar": showSidebar
                 })}>
-                    <NavItem title="About" path="#about" />
-                    <NavItem title="Experience" path="#experience" />
-                    <NavItem title="Work" path="#projects" />
-                    <NavItem title="Contact" path="#contact" />
+                    <NavItem title="About" path="#about" onClick={toggleSidebar} />
+                    <NavItem title="Experience" path="#experience" onClick={toggleSidebar} />
+                    <NavItem title="Work" path="#projects" onClick={toggleSidebar} />
+                    <NavItem title="Contact" path="#contact" onClick={toggleSidebar} />
                     <ResumeButton />
                 </ul>
 
