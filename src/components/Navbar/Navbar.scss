@@ -51,7 +51,7 @@
     cursor: pointer;
     margin-left: auto;
     right: 0;
-    z-index: 999;
+    z-index: 500;
 }
 
 @media screen and (max-width: 850px) {
@@ -70,7 +70,7 @@
             padding: 50px 10px;
             box-shadow: -10px 0px 30px -15px var(--navy-shadow);
             background-color: var(--navy);
-            z-index: 700;
+            z-index: 400;
             transform: translateX(100%);
             transition: var(--transition);
         }

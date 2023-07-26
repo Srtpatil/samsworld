@@ -33,6 +33,10 @@
             padding: 20px;
             position: relative;
 
+            @media screen and (max-width: 650px) {
+                padding-left: 0px;
+            }
+
 
             time {
                 font-size: var(--fz-md);

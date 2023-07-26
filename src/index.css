@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans&display=swap");
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 :root {
@@ -40,6 +40,7 @@ html {
   --fz-lg: 18px;
   --fz-xl: 20px;
   --fz-heading: 38px;
+  --border-width: 20px;
 }
 
 body {
@@ -55,4 +56,10 @@ body {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
+}
+
+@media screen and (max-width: 650px) {
+  :root {
+    --border-width: 10px;
+  }
 }

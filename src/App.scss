@@ -10,7 +10,7 @@ body {
         position: fixed;
         top: 0;
         height: 100%;
-        width: 20px;
+        width: var(--border-width);
         background: var(--light-navy);
         z-index: 999;
     }
@@ -37,7 +37,7 @@ body {
         backface-visibility: hidden;
         position: fixed;
         width: 100%;
-        height: 20px;
+        height: var(--border-width);
         background: var(--light-navy);
         z-index: 999;
     }
