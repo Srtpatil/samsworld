@@ -39,6 +39,9 @@
         overflow: hidden;
         z-index: inherit;
         padding: 40px;
+        @media screen and (max-width: 850px) {
+            padding: 20px;
+        }
 
         &-container {
             border-radius: 20px;
@@ -56,6 +59,10 @@
                 inset: 4px;
                 border-radius: 16px;
                 z-index: 999;
+
+                @media screen and (max-width: 850px) {
+                    padding: 20px;
+                }
             }
 
             @keyframes border-move {
@@ -82,7 +89,7 @@
         }
 
         h1 {
-            font-size: clamp(16px, 6vw, 60px);
+            font-size: clamp(14px, 6vw, 60px);
 
             &::before {
                 content: '“ ';
@@ -93,6 +100,7 @@
             font-size: clamp(12px, 3vw, 30px);
             font-style: italic;
             text-align: end;
+            margin-top: 10px;
         }
     }
 
