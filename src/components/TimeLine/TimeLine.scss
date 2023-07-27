@@ -34,7 +34,7 @@
             position: relative;
 
             @media screen and (max-width: 650px) {
-                padding-left: 0px;
+                padding: 0px;
             }
 
 
@@ -60,11 +60,15 @@
                 background-color: var(--dark-slate);
                 border-radius: 50%;
                 position: absolute;
-                top: 0.75rem;
+                top: 1.5rem;
                 left: calc(-1.5rem - 0.4rem);
                 width: 0.75rem;
                 height: 0.75rem;
                 z-index: 100;
+
+                @media screen and (max-width: 650px) {
+                    top: 0.4rem
+                }
             }
         }
     }
