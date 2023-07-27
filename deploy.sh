@@ -1,15 +1,17 @@
 #!/bin/bash
 
-echo "Removing current deployment by deleting the gh-pages branch"
-git push origin --delete gh-pages
+echo "Removing current deployment Folder"
+rm -rf ./deploy
 
-echo "Building code"
+echo "Create deployment folder"
+mkdir ./deploy
+
+echo "Clone the srtpatil.github.io website"
+cd deploy && git clone https://github.com/Srtpatil/srtpatil.github.io.git && cd ..
+
+echo "Build the code and copy to site"
 npm run build
-git add dist -f
-git commit -m "Adding dist"
-
-echo "Create new gh-pages branch from the master for only dist"
-git subtree push --prefix dist origin gh-pages
+cp -r ./dist/* ./deploy/srtpatil.github.io/
 
 echo "Deploying to gh-pages"
-npm run deploy
+cd ./deploy/srtpatil.github.io && git push && cd ../..
