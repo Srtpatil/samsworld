@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faTerminal, faToolbox } from '@fortawesome/free-solid-svg-icons';
 import { FaCentos, FaCss3 } from 'react-icons/fa';
 import { SiAnsible, SiArchlinux, SiGit, SiNeovim, SiPostman, SiTypescript } from 'react-icons/si';
-import { BiLogoAngular, BiLogoDocker, BiLogoHtml5, BiLogoJavascript, BiLogoKubernetes, BiLogoPostgresql, BiLogoPython, BiLogoReact, BiLogoTypescript } from 'react-icons/bi';
+import { BiLogoAngular, BiLogoDocker, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoKubernetes, BiLogoPostgresql, BiLogoPython, BiLogoReact, BiLogoTypescript } from 'react-icons/bi';
 import { TbBrandAngular, TbBrandCpp, TbBrandCss3, TbBrandDjango, TbBrandReactNative, TbBrandTypescript } from 'react-icons/tb';
 
 const Tech = [ 
@@ -17,6 +17,10 @@ const Tech = [
   {
     text: "Javascript",
     icon: BiLogoJavascript
+  },
+  {
+    text: "Java",
+    icon: BiLogoJava
   },
   {
     text: "Python",
@@ -99,7 +103,7 @@ const About = () => {
       <div className='about-container-left'>
         <p>
           Hey! I'm Samarth, if you haven't already gathered that by now. I'm a software engineer from Pune, India. 
-          I do full stack primarily with React and Django, but love building with whatever tools are right for the job.
+          I do full stack primarily with React/Angular and Django, but love building with whatever tools are right for the job.
         </p>
         <p>My focus these days is building automation tools and dashboards at <a href="https://www.veritas.com/" target="_blank" rel="noreferrer">Veritas Technologies</a></p>
         <p>Outside of work, You can find me,</p>
