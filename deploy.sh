@@ -10,8 +10,10 @@ echo "Clone the srtpatil.github.io website"
 cd deploy && git clone https://github.com/Srtpatil/srtpatil.github.io.git && cd ..
 
 echo "Build the code and copy to site"
-npm run build
-cp -r ./dist/* ./deploy/srtpatil.github.io/
+npm run build && cp -r ./dist/* ./deploy/srtpatil.github.io/
 
 echo "Deploying to gh-pages"
-cd ./deploy/srtpatil.github.io && git push && cd ../..
+cd ./deploy/srtpatil.github.io && git add . && git commit -m "Deploying site" && git push && cd ../..
+
+echo "Removing current deployment Folder"
+rm -rf ./deploy
