@@ -5,10 +5,12 @@ import List from '../List/List';
 const TimeLineData = [
     {
         title: 'Software Engineer, at Veritas Technologies.',
-        description: ["Managed NetBackup code coverage/static analysis infra and pipeline.",
+        description: [
             "Built an IP management tool for infra provisioning pipeline.",
             "Built a multi-cloud cost analysis dashboard.",
-            "Worked on optimizing the database of the cloud cost analysis portal, to reduce the response time."],
+            "Worked on optimizing the database of the cloud cost analysis portal, to reduce the response time.",
+            "Managed NetBackup code coverage/static analysis infra and pipeline.",
+        ],
         date: 'Aug 2021 - Present',
     },
     {

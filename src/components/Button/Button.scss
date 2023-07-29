@@ -12,5 +12,12 @@
         font-family: inherit;
         max-width: 300px;
         cursor: pointer;
+        transition: var(--transition);
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 4px rgba(255, 255, 255, .5);
+        }
     }
+
 }
