@@ -43,14 +43,6 @@ const Tech = [
     icon: TbBrandReactNative
   },
   {
-    text: "HTML",
-    icon: BiLogoHtml5
-  },
-  {
-    text: "CSS",
-    icon: TbBrandCss3
-  },
-  {
     text: "Django",
     icon: TbBrandDjango
   },
