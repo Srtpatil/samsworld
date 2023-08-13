@@ -71,7 +71,7 @@ const Navbar = () => {
                 })}>
                     <NavItem title="About" path="#about" onClick={toggleSidebar} showSidebar={showSidebar}/>
                     <NavItem title="Experience" path="#experience" onClick={toggleSidebar} showSidebar={showSidebar}/>
-                    <NavItem title="Work" path="#projects" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="Projects" path="#projects" onClick={toggleSidebar} showSidebar={showSidebar}/>
                     <NavItem title="Contact" path="#contact" onClick={toggleSidebar} showSidebar={showSidebar}/>
                     <ResumeButton />
                 </ul>

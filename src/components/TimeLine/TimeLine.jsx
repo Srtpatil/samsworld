@@ -9,9 +9,18 @@ const TimeLineData = [
             "Built an IP management tool for infra provisioning pipeline.",
             "Built a multi-cloud cost analysis dashboard.",
             "Worked on optimizing the database of the cloud cost analysis portal, to reduce the response time.",
-            "Managed NetBackup code coverage/static analysis infra and pipeline.",
         ],
-        date: 'Aug 2021 - Present',
+        date: 'Mar 2023 - Present',
+    },
+    {
+        title: 'Associate Software Engineer, at Veritas Technologies.',
+        description: [
+            "Improved deployment times of automation via parallel deployments of nested configs.",
+            "Managed NetBackup code coverage/static analysis infra and pipeline.",
+            "Wrote new automation to assign coverity defects to users who caused it.",
+            "Worked on RHV/Netapp IaC automations for Netbackup.",
+        ],
+        date: 'Aug 2021 - Mar 2023',
     },
     {
         title: 'Software Development Intern, at Veritas Technologies.',

@@ -204,7 +204,12 @@ body {
 
             @media screen and (max-width: 650px) {
                 & {
-                    display: none;
+                    // display: none;
+                    bottom: 1%;
+                    font-size: var(--fz-xxs);
+                    div {
+                        height: 100px;
+                    }
                 }
             }
 
