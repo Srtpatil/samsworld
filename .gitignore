@@ -25,3 +25,7 @@ dist-ssr
 
 
 deploy/
+src/assets/resume*
+!src/assets/resume.pdf
+!src/assets/resume.tex
+!src/assets/resume.cls
