@@ -10,7 +10,7 @@ echo "Clone the srtpatil.github.io website"
 cd deploy && git clone https://github.com/Srtpatil/srtpatil.github.io.git && cd ..
 
 echo "Build Resume"
-cd ./src/assets && pdflatex resume.tex && cd ../..
+cd ./src/assets && pdflatex samarth_resume.tex && cd ../..
 
 echo "Build the code and copy to site"
 npm run build && cp -r ./dist/* ./deploy/srtpatil.github.io/
