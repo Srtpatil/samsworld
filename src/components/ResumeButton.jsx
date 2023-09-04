@@ -1,5 +1,5 @@
 import React from 'react'
-import ResumePDF from '../assets/resume.pdf';
+import ResumePDF from '../assets/samarth_resume.pdf';
 import Button from './Button/Button'
 
 const ResumeButton = () => {
