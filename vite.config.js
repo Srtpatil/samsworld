@@ -6,4 +6,11 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig({
   base: "/",
   plugins: [svgr(), react()],
+  build: {
+      rollupOptions: {
+          output: {
+              assetFileNames: `assets/[name].[ext]`
+          }
+      }
+  }
 })
