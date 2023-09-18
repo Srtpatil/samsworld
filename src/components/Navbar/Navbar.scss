@@ -26,6 +26,12 @@
             width: 70px;
             // margin: 8px;
         }
+
+        &:hover {
+            path {
+                fill: var(--green);
+            }
+        }
     }
 
     &-links-container {
