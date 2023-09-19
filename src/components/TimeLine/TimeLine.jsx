@@ -7,7 +7,7 @@ const TimeLineData = [
         title: 'Software Engineer, at Veritas Technologies.',
         description: [
             "Built an IP management tool for infra provisioning pipeline.",
-            "Created a client side caching library for angular",
+            "Created a client side caching library for angular.",
             "Built a multi-cloud cost analysis dashboard.",
             "Worked on optimizing the database of the cloud cost analysis portal, to reduce the response time.",
         ],
