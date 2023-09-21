@@ -31,6 +31,9 @@
             path {
                 fill: var(--green);
             }
+
+            transition: var(--transition);
+            transform: scale(1.05);
         }
     }
 
