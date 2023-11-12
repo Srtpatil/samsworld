@@ -21,6 +21,7 @@
     &-item {
         margin: 4rem 0;
         padding-left: 24px;
+        transition: var(--transition);
         border-left: 2px solid var(--green);
         width: 100%;
         cursor: pointer;
@@ -48,6 +49,11 @@
             span {
                 color: var(--light-slate);
             }
+
+            transform: scale(1.01);
+            -webkit-box-shadow: 9px 16px 44px -15px rgba(2, 12, 27, 0.76);
+            -moz-box-shadow: 9px 16px 44px -15px rgba(2, 12, 27, 0.76);
+            box-shadow: 9px 16px 44px -15px rgba(2, 12, 27, 0.76);
         }
 
         p {
