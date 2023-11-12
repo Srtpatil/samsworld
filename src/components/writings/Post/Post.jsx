@@ -90,6 +90,10 @@ const Post = ({ summaryData }) => {
                                 </blockquote>
                             ),
                             p(props) {
+                                const hasImage = props.children && props.children.key && props.children.key.match(/img/)
+                                if(hasImage) {
+                                    return props.children;
+                                }
                                 return <p style={{ fontSize: "var(--fz-lg)", margin: "1rem 0px", lineHeight: "1.4" }}>{props.children}</p>
                             },
                             a(props) {

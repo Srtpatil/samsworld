@@ -12,6 +12,9 @@ cd deploy && git clone https://github.com/Srtpatil/srtpatil.github.io.git && cd 
 echo "Build Resume"
 cd ./src/assets && pdflatex samarth_resume.tex && cd ../..
 
+echo "Build Blogs"
+npm run build-blog
+
 echo "Build the code and copy to site"
 npm run build && cp -r ./dist/* ./deploy/srtpatil.github.io/
 
