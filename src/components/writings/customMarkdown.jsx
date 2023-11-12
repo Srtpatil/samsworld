@@ -1,5 +1,5 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { atomDark, coldarkDark, gruvboxDark, materialDark, vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import "./customMarkdown.scss"
 
 
