@@ -15,10 +15,6 @@ const Tech = [
     icon: TbBrandTypescript
   },
   {
-    text: "Java",
-    icon: BiLogoJava
-  },
-  {
     text: "Python",
     icon: BiLogoPython
   },
