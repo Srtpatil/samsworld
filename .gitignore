@@ -28,3 +28,6 @@ deploy/
 src/assets/samarth_resume*
 !src/assets/samarth_resume.tex
 !src/assets/resume.cls
+
+public/summary.json
+public/blogs_out

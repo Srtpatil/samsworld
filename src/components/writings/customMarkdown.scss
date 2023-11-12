@@ -1,0 +1,15 @@
+.inline-code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: var(--lightest-navy);
+    font-family: var(--font-mono);
+    font-size: var(--fz-md);
+}
+
+.h2 {
+    color: var(--lightest-slate);
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+    font-size: clamp(24px, 4vw, var(--fz-heading));
+    white-space: nowrap;
+}

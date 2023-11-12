@@ -9,7 +9,8 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "watch:public": "processmd ./public/blogs/*.md --outputDir public/blogs_out/ --summaryOutput public/summary.json --watch"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
@@ -21,7 +22,11 @@
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-icons": "^4.10.1",
-    "react-markdown": "^8.0.7",
+    "react-markdown": "^9.0.0",
+    "react-router-dom": "^6.18.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^4.0.0",
     "vite-plugin-svgr": "^3.2.0"
   },
   "devDependencies": {
@@ -33,6 +38,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "gh-pages": "^5.0.0",
+    "processmd": "^4.7.0",
     "sass": "^1.63.6",
     "vite": "^4.3.9"
   }

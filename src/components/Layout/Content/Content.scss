@@ -1,0 +1,33 @@
+.site {
+    &-content {
+        // background: url("./assets/bg.svg");
+        // background-size: cover;
+        // background-position: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        // margin-top: 140px;
+
+        @media screen and (max-width: 1350px) {
+            & {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+            & {
+                width: 90%;
+            }
+        }
+    }
+
+    &-content-align-left {
+        align-items: flex-start;
+    }
+
+    &-content-align-strech {
+        align-items: stretch;
+    }
+
+}

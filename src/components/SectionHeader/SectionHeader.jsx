@@ -5,7 +5,8 @@ import "./SectionHeader.scss"
 const SectionHeader = ({ title, align }) => {
 
     const classes = cn('section-header-container', {
-        'flex-row-reverse': align == 'right'
+        'flex-row-reverse': align == 'right',
+        'bottom-align': align == "bottom"
     })
 
     return (
