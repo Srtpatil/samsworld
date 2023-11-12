@@ -3,7 +3,7 @@ import "./PageLoading.scss"
 import cn from 'classnames';
 import Loader from '../Loader/Loader';
 
-const PageLoading = ({ selfLoading, onlyLoad = false, defaultTimeout = 2500 }) => {
+const PageLoading = ({ selfLoading, onlyLoad = false, defaultTimeout = 2000 }) => {
 
     const [loading, setLoading] = useState(selfLoading || true);
 

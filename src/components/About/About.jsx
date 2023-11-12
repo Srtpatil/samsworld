@@ -98,7 +98,7 @@ const About = () => {
     <div className='about-container'>
       <div className='about-container-left'>
         <p>
-          Hey! I'm Samarth, if you haven't already gathered that by now. I'm a software engineer from Pune, India. 
+          Hey! I'm Samarth, if you haven't already gathered that by now. I'm a software engineer, 
           I do full stack primarily with React/Angular and Django, but love building with whatever tools are right for the job.
         </p>
         <p>My focus these days is building automation tools and dashboards at <a href="https://www.veritas.com/" target="_blank" rel="noreferrer">Veritas Technologies</a></p>
