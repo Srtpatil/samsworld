@@ -25,7 +25,7 @@ import Content from '../Layout/Content/Content';
 const Projects = [
   {
     title: "Sam's World",
-    description: "Personal portfolio website made with react, you are viewing it right now !",
+    description: "Personal portfolio website made with react, also contains blogging feature, you are viewing it right now !",
     githubLink: "https://github.com/Srtpatil/samsworld",
     icon: FaUserAstronaut,
     tech: [
