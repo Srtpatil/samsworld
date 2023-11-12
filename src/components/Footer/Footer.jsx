@@ -1,12 +1,12 @@
-import React from 'react';
 import "./Footer.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { EMAIL } from '../../constants';
+import Button from '../Button/Button';
 
 const Footer = () => {
     return (
         <footer className='footer'>
-            <p>Developed with <FontAwesomeIcon icon={faHeart} /> by Samarth</p>
+            <p>Developed with ❤️ by Samarth</p>
+            <Button><a href={`mailto:${EMAIL}?subject=Hi Samarth, We'd Like to Hire You!`} target="_blank" rel="noopener noreferrer">Hire Me</a></Button>
         </footer>
     )
 }

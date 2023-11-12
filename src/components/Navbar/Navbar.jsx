@@ -4,6 +4,8 @@ import { ReactComponent as Logo } from "../../assets/logo.svg"
 import Button from '../Button/Button'
 import cn from 'classnames';
 import ResumeButton from '../ResumeButton';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const NavItem = ({ title, path, onClick, showSidebar }) => {
     const removeSidebar = () => {
@@ -14,7 +16,7 @@ const NavItem = ({ title, path, onClick, showSidebar }) => {
 
     return (
         <li className='nav-link' onClick={removeSidebar}>
-            <a style={{ textDecoration: "none", color: "inherit" }} href={path}>{title}</a>
+            <HashLink style={{ textDecoration: "none", color: "inherit" }} to={path}>{title}</HashLink>
         </li>
     )
 }
@@ -63,16 +65,17 @@ const Navbar = () => {
             <Backdrop showSidebar={showSidebar} onClick={toggleSidebar} />
             <nav className='nav-container'>
                 <div className='nav-logo'>
-                    <a href='#'><Logo /></a>
+                    <Link to='/'><Logo /></Link>
                 </div>
 
                 <ul className={cn("nav-links-container", {
                     "nav-show-sidebar": showSidebar
                 })}>
-                    <NavItem title="About" path="#about" onClick={toggleSidebar} showSidebar={showSidebar}/>
-                    <NavItem title="Experience" path="#experience" onClick={toggleSidebar} showSidebar={showSidebar}/>
-                    <NavItem title="Projects" path="#projects" onClick={toggleSidebar} showSidebar={showSidebar}/>
-                    <NavItem title="Contact" path="#contact" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="About" path="/#about" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="Experience" path="/#experience" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="Projects" path="/#projects" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="Contact" path="/#contact" onClick={toggleSidebar} showSidebar={showSidebar}/>
+                    <NavItem title="Writings" path="/writings" onClick={toggleSidebar} showSidebar={showSidebar}/>
                     <ResumeButton />
                 </ul>
 

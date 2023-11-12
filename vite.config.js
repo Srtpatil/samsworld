@@ -4,13 +4,13 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
-  plugins: [svgr(), react()],
-  build: {
-      rollupOptions: {
-          output: {
-              assetFileNames: `assets/[name].[ext]`
-          }
-      }
-  }
+    base: "/",
+    plugins: [svgr(), react()],
+    build: {
+        rollupOptions: {
+            output: {
+                assetFileNames: `assets/[name].[ext]`
+            }
+        }
+    }
 })

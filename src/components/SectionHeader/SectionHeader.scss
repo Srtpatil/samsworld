@@ -9,8 +9,8 @@
     h2 {
         color: var(--lightest-slate);
         margin: 0;
-        font-size: clamp(26px,5vw,var(--fz-heading));
-        white-space: nowrap;
+        font-size: clamp(26px,5vw, 32px);
+        // white-space: nowrap;
 
         span {
             color: var(--green);
@@ -22,10 +22,21 @@
         background-color: var(--lightest-navy);
         flex: 1;
         max-width: 50%;
-        // max-width: 700px;
     }
 }
 
 .flex-row-reverse {
     flex-direction: row-reverse;
+}
+
+.bottom-align {
+    flex-direction: column;
+    margin: 40px 0;
+    align-items: stretch;
+
+    div {
+        width: 90%;
+        max-width: 100%;
+        flex: auto;
+    }
 }
