@@ -19,7 +19,6 @@ const EmptyContent = ({ message }) => {
 }
 
 const sortPosts = (summaryData) => {
-    console.log(summaryData)
     const formattedData = Object.keys(summaryData.fileMap).map((postKey) => {
         const dateObj = new Date(summaryData.fileMap[postKey].date);
         return { ...summaryData.fileMap[postKey], dateObj }

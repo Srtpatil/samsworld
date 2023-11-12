@@ -3,11 +3,10 @@ import Chip from "../Chip/Chip";
 import List from "../List/List";
 import "./About.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faTerminal, faToolbox } from '@fortawesome/free-solid-svg-icons';
-import { FaCentos, FaCss3 } from 'react-icons/fa';
-import { SiAnsible, SiArchlinux, SiGit, SiMongodb, SiMysql, SiNeovim, SiPostman, SiTypescript } from 'react-icons/si';
-import { BiLogoAngular, BiLogoDocker, BiLogoHtml5, BiLogoJava, BiLogoJavascript, BiLogoKubernetes, BiLogoPostgresql, BiLogoPython, BiLogoReact, BiLogoTypescript } from 'react-icons/bi';
-import { TbBrandAngular, TbBrandCpp, TbBrandCss3, TbBrandDjango, TbBrandReactNative, TbBrandTypescript } from 'react-icons/tb';
+import { faCode, faToolbox } from '@fortawesome/free-solid-svg-icons';
+import { SiAnsible, SiArchlinux, SiGit, SiMongodb, SiMysql, SiNeovim, SiPostman } from 'react-icons/si';
+import { BiLogoDocker, BiLogoKubernetes, BiLogoPostgresql, BiLogoPython, BiLogoReact } from 'react-icons/bi';
+import { TbBrandAngular, TbBrandCpp, TbBrandDjango, TbBrandReactNative, TbBrandTypescript } from 'react-icons/tb';
 
 const Tech = [ 
   {

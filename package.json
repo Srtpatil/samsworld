@@ -9,7 +9,7 @@
     "dev-site": "vite --host 0.0.0.0",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "preview": "npm run build && vite preview",
     "deploy": "gh-pages -d dist",
     "watch:public": "processmd ./public/blogs/*.md --outputDir public/blogs_out/ --summaryOutput public/summary.json --watch",
     "build-blog": "processmd ./public/blogs/*.md --outputDir public/blogs_out/ --summaryOutput public/summary.json"
