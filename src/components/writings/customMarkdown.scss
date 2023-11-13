@@ -13,3 +13,15 @@
     font-size: clamp(24px, 4vw, var(--fz-heading));
     white-space: nowrap;
 }
+
+.code-copy-button {
+    position:absolute;
+    right: 8px;
+    top: 8px;
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: transparent;
+}

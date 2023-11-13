@@ -91,7 +91,7 @@ const Post = ({ summaryData }) => {
                             ),
                             p(props) {
                                 const hasImage = props.children && props.children.key && props.children.key.match(/img/)
-                                if(hasImage) {
+                                if (hasImage) {
                                     return props.children;
                                 }
                                 return <p style={{ fontSize: "var(--fz-lg)", margin: "1rem 0px", lineHeight: "1.4" }}>{props.children}</p>
@@ -109,7 +109,17 @@ const Post = ({ summaryData }) => {
                             td(props) {
                                 return <td className='github-td' style={{ ...props.style }}>{props.children}</td>
                             },
-                            hr: () => <hr style={{ color: 'var(--lightest-navy)' }} />
+                            hr: () => <hr style={{ color: 'var(--lightest-navy)' }} />,
+                            pre(props) {
+                                const hasCode = props.children && props.children.key && props.children.key.match(/code/)
+                                let customStyle = {}
+                                if (hasCode) {
+                                    customStyle = {
+                                        "position": "relative"
+                                    }
+                                }
+                                return <pre style={customStyle}>{props.children}</pre>
+                            }
                         }}
                     >{post.bodyContent}</Markdown>
                     {/* <div style={{ backgroundColor: "var(--lightest-navy)", height: "2px", width: "100%", marginTop: "8rem" }}></div> */}
