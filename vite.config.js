@@ -7,6 +7,7 @@ export default defineConfig({
     base: "/",
     plugins: [svgr(), react()],
     build: {
+        chunkSizeWarningLimit: 1600,
         rollupOptions: {
             output: {
                 assetFileNames: `assets/[name].[ext]`
