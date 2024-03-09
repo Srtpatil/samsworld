@@ -5,8 +5,8 @@ import "./About.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faToolbox } from '@fortawesome/free-solid-svg-icons';
 import { SiAnsible, SiArchlinux, SiGit, SiMongodb, SiMysql, SiNeovim, SiPostman } from 'react-icons/si';
-import { BiLogoDocker, BiLogoKubernetes, BiLogoPostgresql, BiLogoPython, BiLogoReact } from 'react-icons/bi';
-import { TbBrandAngular, TbBrandCpp, TbBrandDjango, TbBrandReactNative, TbBrandTypescript } from 'react-icons/tb';
+import { BiLogoDocker, BiLogoGoLang, BiLogoKubernetes, BiLogoPostgresql, BiLogoPython, BiLogoReact } from 'react-icons/bi';
+import { TbBrandAngular, TbBrandCpp, TbBrandDjango, TbBrandGolang, TbBrandReactNative, TbBrandTypescript } from 'react-icons/tb';
 
 const Tech = [ 
   {
@@ -18,8 +18,8 @@ const Tech = [
     icon: BiLogoPython
   },
   {
-    text: "C/C++",
-    icon: TbBrandCpp
+    text: "Golang",
+    icon: BiLogoGoLang
   },
   {
     text: "Angular",
@@ -94,9 +94,9 @@ const About = () => {
       <div className='about-container-left'>
         <p>
           Hey! I'm Samarth, if you haven't already gathered that by now. I'm a software engineer, 
-          I do full stack primarily with React/Angular and Django, but love building with whatever tools are right for the job.
+          I do full stack primarily with React/Angular and Django/Go, but love building with whatever tools are right for the job.
         </p>
-        <p>My focus these days is building automation tools and dashboards at <a href="https://www.veritas.com/" target="_blank" rel="noreferrer">Veritas Technologies</a></p>
+        <p>These days, building stuff for <a href="https://www.getcerta.com/" target="_blank" rel="noopener noreferrer">Certa</a>, primarily with Django and Golang.</p>
         <p>Outside of work, You can find me,</p>
         <List items={Activities}/>
       </div>

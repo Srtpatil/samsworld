@@ -4,14 +4,22 @@ import List from '../List/List';
 
 const TimeLineData = [
     {
+        title: 'Backend Engineer, at Certa.',
+        description: [
+          "Working on building and optimizing the TPRM solution.",
+          "Building AI based solutions to help vendor/supplier onboarding."
+        ],
+        date: 'Dec 2023 - Present',
+    },
+    {
         title: 'Software Engineer, at Veritas Technologies.',
         description: [
             "Built an IP management tool for infra provisioning pipeline.",
-            "Created a client side caching library for angular.",
+            "Wrote a client side caching library for angular.",
             "Built a multi-cloud cost analysis dashboard.",
-            "Worked on optimizing the database of the cloud cost analysis portal, to reduce the response time.",
+            "Worked on optimizing the database of the cloud cost analysis portal, to reduce the response time from minutes to few seconds.",
         ],
-        date: 'Mar 2023 - Present',
+        date: 'Mar 2023 - Nov 2023',
     },
     {
         title: 'Associate Software Engineer, at Veritas Technologies.',

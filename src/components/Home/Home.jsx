@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect, useState } from 'react';
 import "./Home.scss"
 
 import Navbar from '../Navbar/Navbar'
@@ -113,7 +112,7 @@ const Home = () => {
                 <p className='site-hero-description-text'>
                   Welcome to my little corner of the internet!
                   I am a skilled software engineer with a passion for solving complex problems and creating innovative solutions :) <br />
-                  Currently working at <a href="https://www.veritas.com/" target="_blank" rel="noopener noreferrer">Veritas Technologies</a>.</p>
+                  Currently building stuff for <a href="https://www.getcerta.com/" target="_blank" rel="noopener noreferrer">Certa</a>.</p>
               </div>
 
               <div className='site-hero-socials'>
