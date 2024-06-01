@@ -1,0 +1,96 @@
+.cat-container {
+    font-size: 200px;
+    position: absolute;
+    bottom: -100px;
+    position: sticky;
+    margin-right: auto;
+    background-color: transparent;
+    z-index: -1;
+}
+
+
+
+@keyframes tail {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    27% {
+        transform: rotate(2deg);
+    }
+
+    69% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes blink {
+    0% {
+        transform: scaleY(1);
+    }
+
+    39% {
+        transform: scaleY(1);
+    }
+
+    40% {
+        transform: scaleY(0);
+    }
+
+    41% {
+        transform: scaleY(1);
+    }
+
+    69% {
+        transform: scaleY(1);
+    }
+
+    70% {
+        transform: scaleY(0);
+    }
+
+    71% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+#Cat {
+    transform-origin: bottom center;
+    animation: tail 5.5s infinite alternate;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#Tail {
+    transform-origin: bottom;
+    animation: tail 1.2s ease infinite alternate;
+}
+
+#Left-eye-pupil,
+#right-eye-pupil {
+    transform-origin: center;
+}
+
+#Left-eye,
+#Right-eye {
+    animation: blink 8s infinite alternate;
+    transform-origin: 50% 26%;
+    transition: all .25s ease;
+}
+
+
+@media screen and (max-width: 850px) {
+    .cat-container {
+        width: 200px;
+        height: 400px;
+    }
+}

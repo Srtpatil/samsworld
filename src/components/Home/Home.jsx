@@ -20,6 +20,7 @@ import ResumeButton from '../ResumeButton';
 import { EMAIL, GITHUB_LINK, LEETCODE_LINK, LINKEDIN_LINK } from '../../constants';
 import Page from '../Layout/Page/Page';
 import Content from '../Layout/Content/Content';
+import Cat from '../Cat/Cat'
 
 const Projects = [
   {
@@ -165,6 +166,7 @@ const Home = () => {
           </div>
         </Content>
         <Footer />
+      <Cat />
       </Page>
     </>
   )
