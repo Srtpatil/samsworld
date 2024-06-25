@@ -15,7 +15,7 @@
     grabStop = true,
     nudge = false,
     kuroNeko = false,
-    variant = "classic";
+    variant = "maia";
 
   function parseLocalStorage(key, fallback) {
     try {
@@ -26,6 +26,8 @@
       return fallback;
     }
   }
+
+  const nekoSize = 32;
 
   const nekoSpeed = 15,
     variants = [
@@ -143,11 +145,6 @@
     if (remainingTimeLeft < progressBarRight && remainingTimeTop < progressBarBottom && progressBarTop - remainingTimeBottom < 32) {
       mousePosX = remainingTimeLeft - 16;
 
-      // Comfy special case
-      if (Spicetify.Config.current_theme === "Comfy") {
-        mousePosY = progressBarTop - 14;
-      }
-
       // Move the cat to the left of elapsed time if it is too close to the remaining time (Nord theme)
       if (remainingTimeLeft - elapsedTimeRight < 32) {
         mousePosX = elapsedTimeLeft - 16;
@@ -156,18 +153,17 @@
   }
 
   function create() {
-    variant = parseLocalStorage("variant", "classic");
+    variant = parseLocalStorage("variant", "maia");
     kuroNeko = parseLocalStorage("kuroneko", false);
 
     if (!variants.some((v) => v[0] === variant)) {
-      variant = "classic";
+      variant = "maia";
     }
 
     nekoEl.id = "oneko";
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
-    // nekoEl.style.pointerEvents = "none";
     nekoEl.style.backgroundImage = `url('https://raw.githubusercontent.com/kyrie25/spicetify-oneko/main/assets/oneko/oneko-${variant}.gif')`;
     nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - 16}px`;
