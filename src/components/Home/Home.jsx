@@ -166,7 +166,7 @@ const Home = () => {
           </div>
         </Content>
         <Footer />
-      <Cat />
+      {/* <Cat /> */}
       </Page>
     </>
   )
