@@ -284,8 +284,8 @@
     idleTime += 1;
 
     // every ~ 20 seconds
+    let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
     if (idleTime > 10 && Math.floor(Math.random() * 200) == 0 && idleAnimation == null) {
-      let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
       if (nekoPosX < 32) {
         avalibleIdleAnimations.push("scratchWallW");
       }
@@ -381,7 +381,7 @@
       return;
     }
 
-    direction = diffY / distance > 0.5 ? "N" : "";
+    let direction = diffY / distance > 0.5 ? "N" : "";
     direction += diffY / distance < -0.5 ? "S" : "";
     direction += diffX / distance > 0.5 ? "W" : "";
     direction += diffX / distance < -0.5 ? "E" : "";
