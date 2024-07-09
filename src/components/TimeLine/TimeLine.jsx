@@ -7,7 +7,7 @@ const TimeLineData = [
         title: 'Backend Engineer, at Certa.',
         description: [
           "Working on building and optimizing the TPRM solution.",
-          "Building AI based solutions to help vendor/supplier onboarding."
+          "Building Gen AI based solutions in golang to help vendor/supplier onboarding, with automated form-filling (RAG)."
         ],
         date: 'Dec 2023 - Present',
     },
